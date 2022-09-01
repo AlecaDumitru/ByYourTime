@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime\\ByYourTime.csproj": {}
+    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime\\ByYourTime.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj": {
+    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj",
         "projectName": "ByYourTime.Contracts",
-        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj",
+        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj",
         "packagesPath": "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -34,8 +34,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\ByYourTime.Enums.csproj": {
-                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\ByYourTime.Enums.csproj"
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Enums\\ByYourTime.Enums.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Enums\\ByYourTime.Enums.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\ByYourTime.Data.csproj": {
+    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Data\\ByYourTime.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\ByYourTime.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Data\\ByYourTime.Data.csproj",
         "projectName": "ByYourTime.Data",
-        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\ByYourTime.Data.csproj",
+        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Data\\ByYourTime.Data.csproj",
         "packagesPath": "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\obj\\",
+        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -98,8 +98,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj"
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj"
               }
             }
           }
@@ -115,6 +115,12 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.8, )"
             },
@@ -148,14 +154,14 @@
         }
       }
     },
-    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\ByYourTime.Enums.csproj": {
+    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Enums\\ByYourTime.Enums.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\ByYourTime.Enums.csproj",
+        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Enums\\ByYourTime.Enums.csproj",
         "projectName": "ByYourTime.Enums",
-        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\ByYourTime.Enums.csproj",
+        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Enums\\ByYourTime.Enums.csproj",
         "packagesPath": "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\obj\\",
+        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Enums\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -208,14 +214,14 @@
         }
       }
     },
-    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\ByYourTime.Logic.csproj": {
+    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Logic\\ByYourTime.Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\ByYourTime.Logic.csproj",
+        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Logic\\ByYourTime.Logic.csproj",
         "projectName": "ByYourTime.Logic",
-        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\ByYourTime.Logic.csproj",
+        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Logic\\ByYourTime.Logic.csproj",
         "packagesPath": "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\obj\\",
+        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Logic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -238,11 +244,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj"
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj"
               },
-              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\ByYourTime.Data.csproj": {
-                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\ByYourTime.Data.csproj"
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Data\\ByYourTime.Data.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Data\\ByYourTime.Data.csproj"
               }
             }
           }
@@ -275,14 +281,14 @@
         }
       }
     },
-    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime\\ByYourTime.csproj": {
+    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime\\ByYourTime.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime\\ByYourTime.csproj",
+        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime\\ByYourTime.csproj",
         "projectName": "ByYourTime",
-        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime\\ByYourTime.csproj",
+        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime\\ByYourTime.csproj",
         "packagesPath": "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime\\obj\\",
+        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -305,8 +311,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\ByYourTime.Logic.csproj": {
-                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\ByYourTime.Logic.csproj"
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj"
+              },
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Data\\ByYourTime.Data.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Data\\ByYourTime.Data.csproj"
+              },
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Enums\\ByYourTime.Enums.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Enums\\ByYourTime.Enums.csproj"
+              },
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Logic\\ByYourTime.Logic.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Logic\\ByYourTime.Logic.csproj"
               }
             }
           }
@@ -321,6 +336,22 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"

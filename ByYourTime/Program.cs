@@ -1,5 +1,8 @@
 using ByYourTime.Data;
+using ByYourTime.Data.Data;
+using ByYourTime.Data.Repositories;
 using ByYourTime.Logic;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +12,14 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<IEventLogic, EventLogic>();
-builder.Services.AddSingleton<IEventRepository, EventRepository>();
+
+builder.Services.AddDbContext<EventDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ByYourTime.Data"));
+});
+
+builder.Services.AddScoped<IEventLogic, EventLogic>();
+builder.Services.AddScoped<IEventRepository, EventRepositoryDb>();
 
 var app = builder.Build();
 

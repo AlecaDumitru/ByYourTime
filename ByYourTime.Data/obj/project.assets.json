@@ -1894,6 +1894,7 @@
     "net6.0": [
       "ByYourTime.Contracts >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.8",
+      "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.8"
     ]
@@ -1905,11 +1906,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\ByYourTime.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Data\\ByYourTime.Data.csproj",
       "projectName": "ByYourTime.Data",
-      "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\ByYourTime.Data.csproj",
+      "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Data\\ByYourTime.Data.csproj",
       "packagesPath": "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\obj\\",
+      "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1932,8 +1933,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj": {
-              "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj"
+            "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj"
             }
           }
         }
@@ -1949,6 +1950,12 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.8, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[6.0.8, )"
           },

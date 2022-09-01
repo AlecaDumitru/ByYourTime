@@ -2,6 +2,7 @@
 using ByYourTime.Contracts;
 using ByYourTime.Contracts.Responses;
 using ByYourTime.Data;
+using ByYourTime.Data.Models;
 
 namespace ByYourTime.Logic
 {
@@ -61,7 +62,7 @@ namespace ByYourTime.Logic
 
         public void CreateEvent(Event newEvent)
         {
-            var eventDb = new DbEventContext()
+            var eventDb = new EventModel()
             {
                 Id = newEvent.Id,
                 Name=newEvent.Name,
@@ -81,7 +82,7 @@ namespace ByYourTime.Logic
 
         public void UpdateEvent(Event newEvent)
         {
-            var eventDb = new DbEventContext()
+            var eventDb = new EventModel()
             {
                 Id = newEvent.Id,
                 Name = newEvent.Name,

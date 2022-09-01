@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\ByYourTime.Enums.csproj",
+      "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Enums\\ByYourTime.Enums.csproj",
       "projectName": "ByYourTime.Enums",
-      "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\ByYourTime.Enums.csproj",
+      "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Enums\\ByYourTime.Enums.csproj",
       "packagesPath": "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\obj\\",
+      "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Enums\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

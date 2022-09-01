@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3ZBDDh2aKiWK+Eoo/YhJcKOEsKZIY1fwAAL+s0g9E7hFL0KYbwDYbvwExzILX/pFuvnu2yAHyjCoyDq55T8eog==",
+  "dgSpecHash": "HACu62e4EeAQcjb4FUpG/K3I/l+1LmPds2RBJHKwbg9B5MhwewCyIVRZ8szFVWsBonLQ1iH3I9aprJ/7a2/1aQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\ByYourTime.Logic.csproj",
+  "projectFilePath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime\\ByYourTime.Logic\\ByYourTime.Logic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

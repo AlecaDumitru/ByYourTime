@@ -17,3 +17,22 @@ C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Data\o
 C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Data\obj\Debug\net6.0\ByYourTime.Data.genruntimeconfig.cache
 C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Data\bin\Debug\net6.0\ByYourTime.Enums.dll
 C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Data\bin\Debug\net6.0\ByYourTime.Enums.pdb
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\bin\Debug\net6.0\ByYourTime.Data.deps.json
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\bin\Debug\net6.0\ByYourTime.Data.runtimeconfig.json
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\bin\Debug\net6.0\ByYourTime.Data.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\bin\Debug\net6.0\ref\ByYourTime.Data.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\bin\Debug\net6.0\ByYourTime.Data.pdb
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\bin\Debug\net6.0\ByYourTime.Contracts.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\bin\Debug\net6.0\ByYourTime.Enums.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\bin\Debug\net6.0\ByYourTime.Contracts.pdb
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\bin\Debug\net6.0\ByYourTime.Enums.pdb
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\obj\Debug\net6.0\ByYourTime.Data.csproj.AssemblyReference.cache
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\obj\Debug\net6.0\ByYourTime.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\obj\Debug\net6.0\ByYourTime.Data.AssemblyInfoInputs.cache
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\obj\Debug\net6.0\ByYourTime.Data.AssemblyInfo.cs
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\obj\Debug\net6.0\ByYourTime.Data.csproj.CoreCompileInputs.cache
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\obj\Debug\net6.0\ByYourTime.Data.csproj.CopyComplete
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\obj\Debug\net6.0\ByYourTime.Data.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\obj\Debug\net6.0\ref\ByYourTime.Data.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\obj\Debug\net6.0\ByYourTime.Data.pdb
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Data\obj\Debug\net6.0\ByYourTime.Data.genruntimeconfig.cache

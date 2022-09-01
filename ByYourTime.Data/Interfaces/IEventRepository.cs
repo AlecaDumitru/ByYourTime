@@ -2,15 +2,16 @@
 
 using ByYourTime.Contracts;
 using ByYourTime.Contracts.Responses;
+using ByYourTime.Data.Models;
 
 namespace ByYourTime.Data
 {
     public interface IEventRepository
     {
-        public List<DbEventContext> GetEventsDb();
-        public DbEventContext GetEventDb(int id);
-        public void CreateEventDb(DbEventContext dbEvent);
-        public void UpdateEventDb(DbEventContext dbEvent);
+        public List<EventModel> GetEventsDb();
+        public EventModel GetEventDb(int id);
+        public void CreateEventDb(EventModel dbEvent);
+        public void UpdateEventDb(EventModel dbEvent);
         public void DeleteEventDb(int id);
     }
 }
