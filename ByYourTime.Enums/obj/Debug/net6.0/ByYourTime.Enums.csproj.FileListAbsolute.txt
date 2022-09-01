@@ -1,0 +1,12 @@
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Enums\bin\Debug\net6.0\ByYourTime.Enums.deps.json
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Enums\bin\Debug\net6.0\ByYourTime.Enums.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Enums\bin\Debug\net6.0\ref\ByYourTime.Enums.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Enums\bin\Debug\net6.0\ByYourTime.Enums.pdb
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Enums\obj\Debug\net6.0\ByYourTime.Enums.csproj.AssemblyReference.cache
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Enums\obj\Debug\net6.0\ByYourTime.Enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Enums\obj\Debug\net6.0\ByYourTime.Enums.AssemblyInfoInputs.cache
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Enums\obj\Debug\net6.0\ByYourTime.Enums.AssemblyInfo.cs
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Enums\obj\Debug\net6.0\ByYourTime.Enums.csproj.CoreCompileInputs.cache
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Enums\obj\Debug\net6.0\ByYourTime.Enums.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Enums\obj\Debug\net6.0\ref\ByYourTime.Enums.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Enums\obj\Debug\net6.0\ByYourTime.Enums.pdb

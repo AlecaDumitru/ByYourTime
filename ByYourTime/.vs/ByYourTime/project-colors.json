@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d6bd714b-fba1-4361-857c-dba955265845": {
+      "ProjectGuid": "d6bd714b-fba1-4361-857c-dba955265845",
+      "DisplayName": "ByYourTime.Data",
+      "ColorIndex": 0
+    },
+    "6ea450b1-b00c-4900-89da-931c9bf2e023": {
+      "ProjectGuid": "6ea450b1-b00c-4900-89da-931c9bf2e023",
+      "DisplayName": "ByYourTime.Logic",
+      "ColorIndex": 1
+    },
+    "eea7828b-adc5-4e83-a263-74ad4488c36c": {
+      "ProjectGuid": "eea7828b-adc5-4e83-a263-74ad4488c36c",
+      "DisplayName": "ByYourTime",
+      "ColorIndex": 2
+    },
+    "3c9107cd-2373-4353-b6e8-24a80ef9e6f5": {
+      "ProjectGuid": "3c9107cd-2373-4353-b6e8-24a80ef9e6f5",
+      "DisplayName": "ByYourTime.Contracts",
+      "ColorIndex": 3
+    },
+    "be629c09-79b9-42db-950a-640d5e5a9c73": {
+      "ProjectGuid": "be629c09-79b9-42db-950a-640d5e5a9c73",
+      "DisplayName": "ByYourTime.Enums",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

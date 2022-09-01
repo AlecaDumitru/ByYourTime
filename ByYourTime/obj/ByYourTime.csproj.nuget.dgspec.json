@@ -1,0 +1,352 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime\\ByYourTime.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj",
+        "projectName": "ByYourTime.Contracts",
+        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alexandru.dumitru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://10.0.10.161:8098/nuget": {},
+          "http://10.0.10.222:12345/nuget": {},
+          "http://10.132.32.19/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\ByYourTime.Enums.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\ByYourTime.Enums.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.108\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\ByYourTime.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\ByYourTime.Data.csproj",
+        "projectName": "ByYourTime.Data",
+        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\ByYourTime.Data.csproj",
+        "packagesPath": "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alexandru.dumitru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://10.0.10.161:8098/nuget": {},
+          "http://10.0.10.222:12345/nuget": {},
+          "http://10.132.32.19/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.108\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\ByYourTime.Enums.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\ByYourTime.Enums.csproj",
+        "projectName": "ByYourTime.Enums",
+        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\ByYourTime.Enums.csproj",
+        "packagesPath": "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Enums\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alexandru.dumitru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://10.0.10.161:8098/nuget": {},
+          "http://10.0.10.222:12345/nuget": {},
+          "http://10.132.32.19/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.108\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\ByYourTime.Logic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\ByYourTime.Logic.csproj",
+        "projectName": "ByYourTime.Logic",
+        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\ByYourTime.Logic.csproj",
+        "packagesPath": "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alexandru.dumitru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://10.0.10.161:8098/nuget": {},
+          "http://10.0.10.222:12345/nuget": {},
+          "http://10.132.32.19/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Contracts\\ByYourTime.Contracts.csproj"
+              },
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\ByYourTime.Data.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Data\\ByYourTime.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.108\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime\\ByYourTime.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime\\ByYourTime.csproj",
+        "projectName": "ByYourTime",
+        "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime\\ByYourTime.csproj",
+        "packagesPath": "C:\\Users\\Alexandru.dumitru\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alexandru.dumitru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://10.0.10.161:8098/nuget": {},
+          "http://10.0.10.222:12345/nuget": {},
+          "http://10.132.32.19/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\ByYourTime.Logic.csproj": {
+                "projectPath": "C:\\Users\\Alexandru.dumitru\\Desktop\\ByYourTime Advanced Project\\ByYourTime.Logic\\ByYourTime.Logic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.108\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

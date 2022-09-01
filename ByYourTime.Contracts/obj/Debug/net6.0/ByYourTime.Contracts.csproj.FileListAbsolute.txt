@@ -1,0 +1,15 @@
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\bin\Debug\net6.0\ByYourTime.Contracts.deps.json
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\bin\Debug\net6.0\ByYourTime.Contracts.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\bin\Debug\net6.0\ref\ByYourTime.Contracts.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\bin\Debug\net6.0\ByYourTime.Contracts.pdb
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\obj\Debug\net6.0\ByYourTime.Contracts.csproj.AssemblyReference.cache
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\obj\Debug\net6.0\ByYourTime.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\obj\Debug\net6.0\ByYourTime.Contracts.AssemblyInfoInputs.cache
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\obj\Debug\net6.0\ByYourTime.Contracts.AssemblyInfo.cs
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\obj\Debug\net6.0\ByYourTime.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\obj\Debug\net6.0\ByYourTime.Contracts.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\obj\Debug\net6.0\ref\ByYourTime.Contracts.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\obj\Debug\net6.0\ByYourTime.Contracts.pdb
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\bin\Debug\net6.0\ByYourTime.Enums.dll
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\bin\Debug\net6.0\ByYourTime.Enums.pdb
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime Advanced Project\ByYourTime.Contracts\obj\Debug\net6.0\ByYourTime.Contracts.csproj.CopyComplete
