@@ -22,7 +22,17 @@ namespace ByYourTime.Data.Repositories
 
         public void DeleteEventDb(int id)
         {
-            _eventDb.Events.Remove(GetEventDb(id));
+            var dbEvent = _eventDb.Events.FirstOrDefault(e => e.Id == id);
+            if (dbEvent != null)
+            {
+                _eventDb.Events.Remove(dbEvent);
+            }
+            else
+            {
+                throw new Exception("Event was not found.");
+            }
+            
+            
             _eventDb.SaveChanges();
         }
 

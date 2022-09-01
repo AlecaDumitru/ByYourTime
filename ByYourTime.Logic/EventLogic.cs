@@ -64,7 +64,7 @@ namespace ByYourTime.Logic
         {
             var eventDb = new EventModel()
             {
-                Id = newEvent.Id,
+                //Id = newEvent.Id,
                 Name=newEvent.Name,
                 Description=newEvent.Description,
                 Price=newEvent.Price,
@@ -84,7 +84,7 @@ namespace ByYourTime.Logic
         {
             var eventDb = new EventModel()
             {
-                Id = newEvent.Id,
+                // Id = newEvent.Id,
                 Name = newEvent.Name,
                 Description = newEvent.Description,
                 Price = newEvent.Price,
