@@ -26,6 +26,7 @@ namespace ByYourTime.Data.Repositories
             if (dbEvent != null)
             {
                 _eventDb.Events.Remove(dbEvent);
+                _eventDb.SaveChanges();
             }
             else
             {
@@ -33,7 +34,7 @@ namespace ByYourTime.Data.Repositories
             }
             
             
-            _eventDb.SaveChanges();
+            
         }
 
         public EventModel GetEventDb(int id)

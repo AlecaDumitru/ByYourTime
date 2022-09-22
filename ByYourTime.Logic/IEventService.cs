@@ -5,7 +5,7 @@ using ByYourTime.Data;
 
 namespace ByYourTime.Logic
 {
-    public interface IEventLogic
+    public interface IEventService
     {
         public GetEventsResponse GetEvents();
         public GetEventResponse GetEvent(int id);

@@ -6,11 +6,11 @@ using ByYourTime.Data.Models;
 
 namespace ByYourTime.Logic
 {
-    public class EventLogic : IEventLogic
+    public class EventService : IEventService
     {
         private readonly IEventRepository _eventRepository;
 
-        public EventLogic(IEventRepository eventRepository)
+        public EventService(IEventRepository eventRepository)
         {
             _eventRepository = eventRepository;
         }

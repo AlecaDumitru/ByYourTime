@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0
+}
+
+.navbar-container {
+    background-color: #2bbbad;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.3rem 2rem;
+    
+}
+
+.navbar-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.navbar-container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem
+}

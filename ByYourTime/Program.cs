@@ -18,7 +18,7 @@ builder.Services.AddDbContext<EventDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ByYourTime.Data"));
 });
 
-builder.Services.AddScoped<IEventLogic, EventLogic>();
+builder.Services.AddScoped<IEventService, EventService>();
 builder.Services.AddScoped<IEventRepository, EventRepositoryDb>();
 
 var app = builder.Build();

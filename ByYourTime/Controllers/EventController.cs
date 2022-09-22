@@ -12,9 +12,9 @@ namespace ByYourTime.Controllers
     {
        
         private readonly ILogger<EventController> _logger;
-        private readonly IEventLogic _eventLogic;
+        private readonly IEventService _eventLogic;
 
-        public EventController(ILogger<EventController> logger, IEventLogic eventLogic)
+        public EventController(ILogger<EventController> logger, IEventService eventLogic)
         {
             _logger = logger;
             this._eventLogic = eventLogic;
