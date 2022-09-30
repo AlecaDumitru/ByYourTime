@@ -21,3 +21,4 @@ C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Enums\obj\Debug\net6.0\
 C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Enums\obj\Debug\net6.0\ByYourTime.Enums.dll
 C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Enums\obj\Debug\net6.0\ref\ByYourTime.Enums.dll
 C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Enums\obj\Debug\net6.0\ByYourTime.Enums.pdb
+C:\Users\Alexandru.dumitru\Desktop\ByYourTime\ByYourTime.Enums\obj\Debug\net6.0\ByYourTime.Enums.csproj.AssemblyReference.cache

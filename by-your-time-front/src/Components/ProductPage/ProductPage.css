@@ -1,0 +1,13 @@
+.product{
+    padding: 2rem;
+}
+
+.title{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.price{
+    text-align: left;
+    padding-left: 10px;
+}

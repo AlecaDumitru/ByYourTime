@@ -2,6 +2,7 @@
 using ByYourTime.Contracts;
 using ByYourTime.Contracts.Responses;
 using ByYourTime.Data;
+using ByYourTime.Data.Models;
 
 namespace ByYourTime.Logic
 {

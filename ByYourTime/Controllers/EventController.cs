@@ -1,6 +1,7 @@
 using ByYourTime.Contracts;
 using ByYourTime.Contracts.Responses;
 using ByYourTime.Data;
+using ByYourTime.Enums;
 using ByYourTime.Logic;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,10 +22,12 @@ namespace ByYourTime.Controllers
         }
         
         [HttpGet]
-        public GetEventsResponse Get()
+        public GetEventsResponse Get(CategoriesOfEvents? categoriesOfEvents)
         {
             return _eventLogic.GetEvents();
         }
+
+        
 
         [HttpGet("/{id}")]
         public GetEventResponse GetEventById(int id)
