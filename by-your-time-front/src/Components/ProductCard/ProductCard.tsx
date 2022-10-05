@@ -8,9 +8,9 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import { Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Props } from "../../Pages/EventsAllCategories";
-import ProductDetails from "../ProductPage/ProductPage";
+
 
 export default function ProductCard({
   pictureUrl,
@@ -40,7 +40,7 @@ export default function ProductCard({
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">See more events</Button>
+          <Link to="/events/product">See event</Link>
 
           {/* <Button size="small">Learn More</Button> */}
         </CardActions>

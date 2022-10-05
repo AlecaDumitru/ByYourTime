@@ -9,31 +9,31 @@ const products = [
   {
     name: "Product 1",
     desc: "A nice thing",
-    price: "$9.99",
+    price: "50 lei",
   },
   {
     name: "Product 2",
     desc: "Another thing",
-    price: "$3.45",
+    price: "50 lei",
   },
   {
     name: "Product 3",
     desc: "Something else",
-    price: "$6.51",
+    price: "25 lei",
   },
   {
     name: "Product 4",
     desc: "Best thing of all",
-    price: "$14.11",
+    price: "20 lei",
   },
   { name: "Shipping", desc: "", price: "Free" },
 ];
 const addresses = [
-  "1 Material-UI Drive",
-  "Reactville",
-  "Anytown",
-  "99999",
-  "USA",
+  "Piata Presei",
+  "Sector 1",
+  "Bucharest",
+  "013071",
+  "Romania",
 ];
 const payments = [
   { name: "Card type", detail: "Visa" },
@@ -50,7 +50,7 @@ export default function Review() {
       </Typography>
       <List disablePadding>
         {products.map((product) => (
-          <ListItem key={product.name} sx={{ py: 1, px: 45}}>
+          <ListItem key={product.name} sx={{ py: 1, px: 45 }}>
             <ListItemText primary={product.name} secondary={product.desc} />
             <Typography variant="body2">{product.price}</Typography>
           </ListItem>
@@ -58,7 +58,7 @@ export default function Review() {
         <ListItem sx={{ py: 1, px: 45 }}>
           <ListItemText primary="Total" />
           <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
-            $34.06
+            95 lei
           </Typography>
         </ListItem>
       </List>

@@ -11,7 +11,7 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Paper } from "@mui/material";
 import { Link } from "react-router-dom";
-import "./Register.css";
+import "./Login.css";
 
 const theme = createTheme();
 
@@ -79,7 +79,7 @@ export default function Register() {
             label="Remember me"
           />
           <Button
-            className="register-button"
+            className="login-button"
             type="submit"
             fullWidth
             variant="contained"

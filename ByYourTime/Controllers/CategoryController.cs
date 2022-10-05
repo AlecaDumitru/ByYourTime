@@ -1,16 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ByYourTime.Enums;
+using ByYourTime.Logic;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ByYourTime.Controllers
 {
 
     [ApiController]
     [Route("[controller]")]
-    public class CategoriesController : ControllerBase
+    public class CategoryController : ControllerBase
     {
-        
-        //public GetCategoriesResponse getCategories()
-        //{
 
-        //}
+        private readonly ILogger<CategoryController> _logger;
+        private readonly ICategoryService _categoryLogic;
+
+        public CategoryController(ILogger<CategoryController> logger, ICategoryService categoryLogic)
+        {
+            _logger = logger;
+            this._categoryLogic = categoryLogic;
+        }
+
+        public List<CategoriesOfEvents> getCategories()
+        {
+            return _categoryLogic.
+
+        }
     }
 }

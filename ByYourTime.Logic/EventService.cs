@@ -33,7 +33,7 @@ namespace ByYourTime.Logic
                     Location = x.Location,
                     NumberOfSeatsAvailable = x.NumberOfSeatsAvailable,
                     IsItOutdoor = x.IsItOutdoor,
-                    TypeOfEvent = x.TypeOfEvent,
+                    CategoryOfEvent = x.CategoryOfEvent,
                     CreatedAt = x.CreatedAt,
                     EventCrew = x.EventCrew
                 }).ToList(),
@@ -53,7 +53,7 @@ namespace ByYourTime.Logic
                 Location = eventContext.Location,
                 NumberOfSeatsAvailable = eventContext.NumberOfSeatsAvailable,
                 IsItOutdoor = eventContext.IsItOutdoor,
-                TypeOfEvent = eventContext.TypeOfEvent,
+                CategoryOfEvent = eventContext.CategoryOfEvent,
                 CreatedAt = eventContext.CreatedAt,
                 EventCrew = eventContext.EventCrew,
             };
@@ -72,7 +72,7 @@ namespace ByYourTime.Logic
                 Location=newEvent.Location,
                 NumberOfSeatsAvailable=newEvent.NumberOfSeatsAvailable,
                 IsItOutdoor=newEvent.IsItOutdoor,
-                TypeOfEvent=newEvent.TypeOfEvent,
+                CategoryOfEvent = newEvent.CategoryOfEvent,
                 CreatedAt=newEvent.CreatedAt,
                 EventCrew=newEvent.EventCrew,
             };
@@ -92,7 +92,7 @@ namespace ByYourTime.Logic
                 Location = newEvent.Location,
                 NumberOfSeatsAvailable = newEvent.NumberOfSeatsAvailable,
                 IsItOutdoor = newEvent.IsItOutdoor,
-                TypeOfEvent = newEvent.TypeOfEvent,
+                CategoryOfEvent = newEvent.CategoryOfEvent,
                 CreatedAt = newEvent.CreatedAt,
                 EventCrew = newEvent.EventCrew,
             };

@@ -1,5 +1,6 @@
 using ByYourTime.Data;
 using ByYourTime.Data.Data;
+using ByYourTime.Data.Interfaces;
 using ByYourTime.Data.Repositories;
 using ByYourTime.Logic;
 using Microsoft.EntityFrameworkCore;
@@ -28,8 +29,15 @@ builder.Services.AddDbContext<EventDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ByYourTime.Data"));
 });
 
+builder.Services.AddDbContext<CategoryDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ByYourTime.Data"));
+});
+
 builder.Services.AddScoped<IEventService, EventService>();
 builder.Services.AddScoped<IEventRepository, EventRepositoryDb>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepositoryDb>();
+
 
 var app = builder.Build();
 

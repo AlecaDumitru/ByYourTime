@@ -1,13 +1,30 @@
+import { useState } from "react";
 import "./Navbar.css";
-
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 export default function Navbar() {
+  const [isClicked, setIsClicked] = useState(false);
+
   return (
     <nav className="navbar-container">
       <a href="/">
         <img src="/images/logoOk2.png" height="100px" alt="ByYourTime" />
       </a>
-      <a href="/events">Events</a>
+      <div className="events" onClick={() => setIsClicked(!isClicked)}>Events<ArrowDropDownIcon />
+      </div>
+      {isClicked && (
+        <>
+          <div className="dropdown">
+            <a href="/workshops">Workshops</a>
+            <a href="/workshops">Workshops</a>
+            <a href="/workshops">Workshops</a>
+            <a href="/workshops">Workshops</a>
+            <a href="/workshops">Workshops</a>
+            <a href="/workshops">Workshops</a>
+            <a href="/workshops">Workshops</a>
+          </div>
+        </>
+      )}
 
       <a href="/blog">Blog</a>
       <a href="/newsletter">Newsletter</a>
