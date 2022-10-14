@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ByYourTime.Data.Data
 {
-    public class EventDbContext : DbContext
+    public class AppDbContext : DbContext
     {
 
-        public EventDbContext(DbContextOptions<EventDbContext> options) : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
 
         {
 
@@ -15,6 +15,6 @@ namespace ByYourTime.Data.Data
 
         public DbSet<EventModel> Events { get; set; }
 
-
+        public DbSet<CategoryModel> Categories { get; set; }
     }
 }

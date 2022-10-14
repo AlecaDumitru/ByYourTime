@@ -11,3 +11,8 @@
     text-align: left;
     padding-left: 10px;
 }
+
+.button {
+    color: black;
+    display: flex;
+}

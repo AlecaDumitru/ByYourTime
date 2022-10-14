@@ -13,5 +13,6 @@ namespace ByYourTime.Data
         public void CreateEventDb(EventModel dbEvent);
         public void UpdateEventDb(EventModel dbEvent);
         public void DeleteEventDb(int id);
+        public List<EventModel> GetEventsByCategoryId(int id);
     }
 }

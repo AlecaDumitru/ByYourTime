@@ -1,4 +1,5 @@
-﻿using ByYourTime.Enums;
+﻿using ByYourTime.Contracts.Responses;
+using ByYourTime.Enums;
 using ByYourTime.Logic;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,9 +20,10 @@ namespace ByYourTime.Controllers
             this._categoryLogic = categoryLogic;
         }
 
-        public List<CategoriesOfEvents> getCategories()
+        [HttpGet]
+        public GetCategoriesResponse getCategories()
         {
-            return _categoryLogic.
+            return _categoryLogic.GetCategoriesOfEvents();
 
         }
     }

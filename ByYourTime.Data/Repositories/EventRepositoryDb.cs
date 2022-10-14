@@ -6,9 +6,9 @@ namespace ByYourTime.Data.Repositories
 {
     public class EventRepositoryDb : IEventRepository
     {
-        private readonly EventDbContext _eventDb;
+        private readonly AppDbContext _eventDb;
 
-        public EventRepositoryDb(EventDbContext eventDb)
+        public EventRepositoryDb(AppDbContext eventDb)
         {
             _eventDb = eventDb;
         }
@@ -51,6 +51,14 @@ namespace ByYourTime.Data.Repositories
         {
             _eventDb.Events.Update(dbEvent);
             _eventDb.SaveChanges();
+        }
+
+
+        public List<EventModel> GetEventsByCategoryId(int id)
+        {
+
+            var eventsByCategoryId = _eventDb.Events.Where(x=>x.CategoryId == id).OrderByDescending(x=>x.CreatedAt).ToList();
+            return eventsByCategoryId;
         }
     }
 }

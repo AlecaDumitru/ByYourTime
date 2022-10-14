@@ -24,20 +24,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<EventDbContext>(options =>
+builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("ByYourTime.Data"));
 });
 
-builder.Services.AddDbContext<CategoryDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ByYourTime.Data"));
-});
+
 
 builder.Services.AddScoped<IEventService, EventService>();
 builder.Services.AddScoped<IEventRepository, EventRepositoryDb>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepositoryDb>();
-
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 var app = builder.Build();
 

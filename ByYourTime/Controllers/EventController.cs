@@ -22,7 +22,7 @@ namespace ByYourTime.Controllers
         }
         
         [HttpGet]
-        public GetEventsResponse Get(CategoriesOfEvents? categoriesOfEvents)
+        public GetEventsResponse Get()
         {
             return _eventLogic.GetEvents();
         }
@@ -33,6 +33,13 @@ namespace ByYourTime.Controllers
         public GetEventResponse GetEventById(int id)
         {
             return _eventLogic.GetEvent(id);
+        }
+
+
+        [HttpGet("/events/category/{id}")]
+        public GetEventsResponse GetAllEventsByCategoryId([FromRoute]int id)
+        {
+            return _eventLogic.GetAllEventsByCategoriesId(id);
         }
 
 

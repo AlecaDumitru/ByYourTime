@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByYourTime.Data.Models
+namespace ByYourTime.Contracts
 {
-    public class CategoryModel
+    public class Category
     {
         public int Id { get; set; }
         public string Name { get; set; } = default!;

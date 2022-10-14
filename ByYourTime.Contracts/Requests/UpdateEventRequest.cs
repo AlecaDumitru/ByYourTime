@@ -14,7 +14,7 @@ namespace ByYourTime.Contracts.Requests
         public string Location { get; set; } = default!;
         public int NumberOfSeatsAvailable { get; set; }
         public bool IsItOutdoor { get; set; }
-        public string CategoryOfEvent { get; set; } = default!;
+        public int CategoryId { get; set; } = default!;
         public List<EventCrew> EventCrew { get; set; } = default!;
     }
 }

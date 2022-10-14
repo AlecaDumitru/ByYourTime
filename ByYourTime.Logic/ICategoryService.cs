@@ -1,4 +1,5 @@
-﻿using ByYourTime.Enums;
+﻿using ByYourTime.Contracts.Responses;
+using ByYourTime.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace ByYourTime.Logic
 {
     public interface ICategoryService
     {
-        public List<CategoriesOfEvents> GetCategoriesOfEvents();
+        public GetCategoriesResponse GetCategoriesOfEvents();
     }
 }

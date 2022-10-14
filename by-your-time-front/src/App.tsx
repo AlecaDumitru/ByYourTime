@@ -10,6 +10,8 @@ import ProductDetails from "./Components/ProductPage/ProductPage";
 import CheckoutPage from "./Components/Checkout/CheckoutPage";
 import Login from "./Pages/Account/Login";
 import Register from "./Pages/Account/Register";
+import ProductCard from "./Components/ProductCard/ProductCard";
+import EventsByCategoryId from "./Pages/EventsByCategoryId";
 
 function App() {
   return (
@@ -23,7 +25,9 @@ function App() {
           <Route path="/" element={<Slider />} />
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/login" element={<Login />} />
-          <Route path="register" element={<Register />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/events/category/:id" element={<EventsByCategoryId />} />
+          <Route path="/event/:id" element={<ProductDetails />} />
         </Routes>
       </Router>
       <Footer />

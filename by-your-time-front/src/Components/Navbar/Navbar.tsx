@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./Navbar.css";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import CategoriesApi from "../Dropdown";
 
-export default function Navbar() {
+export default function Navbar(this: any) {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
@@ -10,18 +11,14 @@ export default function Navbar() {
       <a href="/">
         <img src="/images/logoOk2.png" height="100px" alt="ByYourTime" />
       </a>
-      <div className="events" onClick={() => setIsClicked(!isClicked)}>Events<ArrowDropDownIcon />
+      <div className="events" onClick={() => setIsClicked(!isClicked)}>
+        Events
+        <ArrowDropDownIcon />
       </div>
       {isClicked && (
         <>
           <div className="dropdown">
-            <a href="/workshops">Workshops</a>
-            <a href="/workshops">Workshops</a>
-            <a href="/workshops">Workshops</a>
-            <a href="/workshops">Workshops</a>
-            <a href="/workshops">Workshops</a>
-            <a href="/workshops">Workshops</a>
-            <a href="/workshops">Workshops</a>
+            <CategoriesApi />
           </div>
         </>
       )}

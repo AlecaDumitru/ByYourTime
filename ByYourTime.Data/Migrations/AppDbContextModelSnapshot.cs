@@ -4,18 +4,16 @@ using ByYourTime.Data.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
 namespace ByYourTime.Data.Migrations
 {
-    [DbContext(typeof(EventDbContext))]
-    [Migration("20220901123026_InitialMigration")]
-    partial class InitialMigration
+    [DbContext(typeof(AppDbContext))]
+    partial class AppDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,7 +22,24 @@ namespace ByYourTime.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ByYourTime.Contracts.EventCrew", b =>
+            modelBuilder.Entity("ByYourTime.Data.Models.CategoryModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("ByYourTime.Data.Models.EventCrewModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -46,7 +61,7 @@ namespace ByYourTime.Data.Migrations
 
                     b.HasIndex("EventModelId");
 
-                    b.ToTable("EventCrew");
+                    b.ToTable("EventCrewModel");
                 });
 
             modelBuilder.Entity("ByYourTime.Data.Models.EventModel", b =>
@@ -56,6 +71,9 @@ namespace ByYourTime.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -85,19 +103,29 @@ namespace ByYourTime.Data.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("TypeOfEvent")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Events");
                 });
 
-            modelBuilder.Entity("ByYourTime.Contracts.EventCrew", b =>
+            modelBuilder.Entity("ByYourTime.Data.Models.EventCrewModel", b =>
                 {
                     b.HasOne("ByYourTime.Data.Models.EventModel", null)
                         .WithMany("EventCrew")
                         .HasForeignKey("EventModelId");
+                });
+
+            modelBuilder.Entity("ByYourTime.Data.Models.EventModel", b =>
+                {
+                    b.HasOne("ByYourTime.Data.Models.CategoryModel", "Category")
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("ByYourTime.Data.Models.EventModel", b =>

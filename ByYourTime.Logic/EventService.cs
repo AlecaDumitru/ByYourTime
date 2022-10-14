@@ -21,22 +21,81 @@ namespace ByYourTime.Logic
         {
 
             var events = _eventRepository.GetEventsDb();
+            List<Event> eventsList = new List<Event>();
+            foreach (var e in events)
+            {
+                var resultEvent = new Event()
+                {
+
+                    Id = e.Id,
+                    Name = e.Name,
+                    Description = e.Description,
+                    Price = e.Price,
+                    DateOfEvent = e.DateOfEvent,
+                    Location = e.Location,
+                    NumberOfSeatsAvailable = e.NumberOfSeatsAvailable,
+                    IsItOutdoor = e.IsItOutdoor,
+                    CategoryId = e.CategoryId,
+                    CreatedAt = e.CreatedAt,
+                    //EventCrew = new List<EventCrew>()
+
+                };
+                //foreach(var crew in e.EventCrew)
+                //{
+                //    resultEvent.EventCrew.Add(new EventCrew()
+                //    {
+                //        Id=crew.Id,
+                //        Name=crew.Name,
+                //        Profession = crew.Profession,
+                //    });
+                //}
+                eventsList.Add(resultEvent);
+            }
             return new GetEventsResponse()
             {
-                Events = events.Select(x => new Event()
+                Events = eventsList
+            };
+              
+        }
+
+        public GetEventsResponse GetAllEventsByCategoriesId(int id)
+        {
+            var events = _eventRepository.GetEventsByCategoryId(id);
+            List<Event> eventsList = new List<Event>();
+            foreach (var e in events)
+            {
+                var resultEvent = new Event()
                 {
-                    Id = x.Id,
-                    Name = x.Name,
-                    Description = x.Description,
-                    Price = x.Price,
-                    DateOfEvent = x.DateOfEvent,
-                    Location = x.Location,
-                    NumberOfSeatsAvailable = x.NumberOfSeatsAvailable,
-                    IsItOutdoor = x.IsItOutdoor,
-                    CategoryOfEvent = x.CategoryOfEvent,
-                    CreatedAt = x.CreatedAt,
-                    EventCrew = x.EventCrew
-                }).ToList(),
+
+                    Id = e.Id,
+                    Name = e.Name,
+                    Description = e.Description,
+                    Price = e.Price,
+                    DateOfEvent = e.DateOfEvent,
+                    Location = e.Location,
+                    NumberOfSeatsAvailable = e.NumberOfSeatsAvailable,
+                    IsItOutdoor = e.IsItOutdoor,
+                    CategoryId = e.CategoryId,
+                    CreatedAt = e.CreatedAt,
+                    PictureURL = e.PictureURL,
+                    Currency = e.Currency,
+                    //EventCrew = new List<EventCrew>()
+
+                };
+                //foreach(var crew in e.EventCrew)
+                //{
+                //    resultEvent.EventCrew.Add(new EventCrew()
+                //    {
+                //        Id=crew.Id,
+                //        Name=crew.Name,
+                //        Profession = crew.Profession,
+                //    });
+                //}
+                eventsList.Add(resultEvent);
+            }
+            return new GetEventsResponse()
+            {
+                Events = eventsList
             };
         }
 
@@ -53,9 +112,11 @@ namespace ByYourTime.Logic
                 Location = eventContext.Location,
                 NumberOfSeatsAvailable = eventContext.NumberOfSeatsAvailable,
                 IsItOutdoor = eventContext.IsItOutdoor,
-                CategoryOfEvent = eventContext.CategoryOfEvent,
+                CategoryId = eventContext.CategoryId,
                 CreatedAt = eventContext.CreatedAt,
-                EventCrew = eventContext.EventCrew,
+                PictureURL= eventContext.PictureURL,
+                 Currency = eventContext.Currency,
+                //EventCrew = eventContext.EventCrew,
             };
 
         }
@@ -72,10 +133,19 @@ namespace ByYourTime.Logic
                 Location=newEvent.Location,
                 NumberOfSeatsAvailable=newEvent.NumberOfSeatsAvailable,
                 IsItOutdoor=newEvent.IsItOutdoor,
-                CategoryOfEvent = newEvent.CategoryOfEvent,
+                CategoryId = newEvent.CategoryId,
                 CreatedAt=newEvent.CreatedAt,
-                EventCrew=newEvent.EventCrew,
+                EventCrew = new List<EventCrewModel>()
             };
+            foreach (var crew  in newEvent.EventCrew)
+            {
+                eventDb.EventCrew.Add(new EventCrewModel()
+                {
+                    
+                    Name = crew.Name,
+                    Profession = crew.Profession,
+                });
+            }
             _eventRepository.CreateEventDb(eventDb);
             
         }
@@ -92,9 +162,9 @@ namespace ByYourTime.Logic
                 Location = newEvent.Location,
                 NumberOfSeatsAvailable = newEvent.NumberOfSeatsAvailable,
                 IsItOutdoor = newEvent.IsItOutdoor,
-                CategoryOfEvent = newEvent.CategoryOfEvent,
+                CategoryId  = newEvent.CategoryId,
                 CreatedAt = newEvent.CreatedAt,
-                EventCrew = newEvent.EventCrew,
+                //EventCrew = newEvent.EventCrew,
             };
             _eventRepository.UpdateEventDb(eventDb);
         }

@@ -13,5 +13,6 @@ namespace ByYourTime.Logic
         public void CreateEvent(Event newEvent);
         public void UpdateEvent(Event newEvent);
         public void DeleteEvent(int id);
+        public GetEventsResponse GetAllEventsByCategoriesId(int id);
     }
 }

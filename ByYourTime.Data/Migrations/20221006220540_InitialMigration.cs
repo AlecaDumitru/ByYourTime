@@ -10,6 +10,19 @@ namespace ByYourTime.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Categories",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Categories", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Events",
                 columns: table => new
                 {
@@ -22,16 +35,22 @@ namespace ByYourTime.Data.Migrations
                     Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     NumberOfSeatsAvailable = table.Column<int>(type: "int", nullable: false),
                     IsItOutdoor = table.Column<bool>(type: "bit", nullable: false),
-                    TypeOfEvent = table.Column<int>(type: "int", nullable: false),
+                    CategoryId = table.Column<int>(type: "int", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Events", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Events_Categories_CategoryId",
+                        column: x => x.CategoryId,
+                        principalTable: "Categories",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "EventCrew",
+                name: "EventCrewModel",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -42,27 +61,35 @@ namespace ByYourTime.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_EventCrew", x => x.Id);
+                    table.PrimaryKey("PK_EventCrewModel", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_EventCrew_Events_EventModelId",
+                        name: "FK_EventCrewModel_Events_EventModelId",
                         column: x => x.EventModelId,
                         principalTable: "Events",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_EventCrew_EventModelId",
-                table: "EventCrew",
+                name: "IX_EventCrewModel_EventModelId",
+                table: "EventCrewModel",
                 column: "EventModelId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Events_CategoryId",
+                table: "Events",
+                column: "CategoryId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "EventCrew");
+                name: "EventCrewModel");
 
             migrationBuilder.DropTable(
                 name: "Events");
+
+            migrationBuilder.DropTable(
+                name: "Categories");
         }
     }
 }

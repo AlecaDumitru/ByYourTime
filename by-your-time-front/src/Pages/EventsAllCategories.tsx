@@ -12,6 +12,7 @@ import "./Categories.css";
 import { IEvents } from "./event";
 
 export interface Props {
+  id?: number;
   productName?: string;
   price?: number;
   currency?: string;
@@ -26,7 +27,9 @@ const Categories = () => {
   async function getEvents() {
     fetch(`http://localhost:5286/Event`, {
       method: "GET",
-    }).then((response) => {
+    })
+    .then((response) => 
+    { 
       console.log(response);
       const data = response.json();
       setEvents(data);
@@ -46,52 +49,11 @@ const Categories = () => {
       description: "What's The Rush? Buy Your Time And Gain An Advantage",
       pictureUrl: "/images/theatre.jpg",
     },
-    {
-      productName: "Concerts",
-      price: 50,
-      currency: "lei",
-      description: "What's The Rush? Buy Your Time And Gain An Advantage",
-      pictureUrl: "/images/concerts.jpg",
-    },
-    {
-      productName: "Workshops",
-      price: 50,
-      currency: "lei",
-      description: "What's The Rush? Buy Your Time And Gain An Advantage",
-      pictureUrl: "/images/workshops.png",
-    },
-    {
-      productName: "Charity Events",
-      price: 50,
-      currency: "lei",
-      description: "What's The Rush? Buy Your Time And Gain An Advantage",
-      pictureUrl: "/images/charity.jpg",
-    },
-    {
-      productName: "Fairs",
-      price: 50,
-      currency: "lei",
-      description: "What's The Rush? Buy Your Time And Gain An Advantage",
-      pictureUrl: "/images/fairs.jpg",
-    },
-    {
-      productName: "Courses",
-      price: 50,
-      currency: "lei",
-      description: "What's The Rush? Buy Your Time And Gain An Advantage",
-      pictureUrl: "/images/courses.jpg",
-    },
-    {
-      productName: "Kids Concept",
-      price: 50,
-      currency: "lei",
-      description: "What's The Rush? Buy Your Time And Gain An Advantage",
-      pictureUrl: "/images/kids.jpg",
-    },
+    
   ];
   return (
     <div>
-      {/* <h1 className="eventsheader">Events</h1> */}
+
       <List>
         <List className="grid">
           {products.map((product, index) => (
