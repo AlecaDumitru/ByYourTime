@@ -14,7 +14,7 @@ const CategoriesApi = () => {
   }, []);
 
   return (
-    <div>
+    <div className="dropdown">
       {Categories.map((category) => (
         <>
           <a key={category.id} href={`/events/category/${category.id}`}>
