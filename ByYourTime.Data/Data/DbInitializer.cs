@@ -30,6 +30,7 @@ namespace ByYourTime.Data.Data
                 await userManager.CreateAsync(user, "Pa$$1234");
                 await userManager.AddToRolesAsync(admin, new[] {"Member", "Admin" });
             }
+            context.SaveChanges();
         }
     }
 }
