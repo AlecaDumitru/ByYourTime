@@ -1,8 +1,10 @@
 using ByYourTime.Data;
 using ByYourTime.Data.Data;
 using ByYourTime.Data.Interfaces;
+using ByYourTime.Data.Models;
 using ByYourTime.Data.Repositories;
 using ByYourTime.Logic;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,8 +31,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ByYourTime.Data"));
 });
 
+builder.Services.AddIdentityCore<UserModel>()
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>();
+
+builder.Services.AddAuthentication();
+builder.Services.AddAuthorization();
 
 
+builder.Services.AddScoped<UserManager<UserModel>>();
 builder.Services.AddScoped<IEventService, EventService>();
 builder.Services.AddScoped<IEventRepository, EventRepositoryDb>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepositoryDb>();

@@ -29,4 +29,3 @@ const CategoriesApi = () => {
 export default CategoriesApi;
 
 
-// href={`/category/${category.id}`}
