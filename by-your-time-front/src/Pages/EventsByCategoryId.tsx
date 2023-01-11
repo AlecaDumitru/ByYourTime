@@ -24,14 +24,14 @@ export default function EventsByCategoryId() {
       <List>
         <List className="grid">
           {Events.map((event, index) => (
-            <div className="element">
-              <ListItem key={index} />
+            <div className="element" key={event.id}>
+              <ListItem />
               <ProductCard
                 id={event.id}
                 pictureUrl={event.pictureURL}
                 productName={event.name}
                 price={event.price}
-                currency = {event.currency}
+                currency={event.currency}
                 description={event.description}
               />
             </div>

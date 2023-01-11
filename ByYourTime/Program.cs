@@ -82,7 +82,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = false,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(s: ("JWTSettings: TokenKey")))
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWTSettings:TokenKey"]))
         };
     });
 builder.Services.AddAuthorization();
@@ -90,7 +90,7 @@ builder.Services.AddAuthorization();
 builder.Services.AddScoped<UserManager<UserModel>>();
 builder.Services.AddScoped<IEventService, EventService>();
 builder.Services.AddScoped<IEventRepository, EventRepositoryDb>();
-builder.Services.AddScoped<ICategoryRepository, CategoryRepositoryDb>(); 
+builder.Services.AddScoped<ICategoryRepository, CategoryRepositoryDb>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<TokenService>();
 

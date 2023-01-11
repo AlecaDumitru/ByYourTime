@@ -48,6 +48,7 @@ namespace ByYourTime.Controllers
             await _userManager.AddToRoleAsync(user, "Member");
             return StatusCode(201);
         }
+
         //use the token to get the user from the database and return a user with the token
         [Authorize]
         [HttpGet("currentUser")]

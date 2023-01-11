@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./Dropdown.css"
+import "./Dropdown.css";
 
 const CategoriesApi = () => {
   let [Categories, SetCategories] = useState([{ id: "", name: "" }]);
@@ -14,11 +14,13 @@ const CategoriesApi = () => {
   }, []);
 
   return (
-    <div className="dropdown">
+    <div className="dropdown-drop">
       {Categories.map((category) => (
         <>
-          <a key={category.id} href={`/events/category/${category.id}`}>
-            <br />
+          <a
+            href={`/events/category/${category.id}`}
+            className="dropdown-categories"
+          >
             {category.name}
           </a>
         </>
@@ -27,5 +29,3 @@ const CategoriesApi = () => {
   );
 };
 export default CategoriesApi;
-
-

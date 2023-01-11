@@ -50,7 +50,8 @@ export default function ProductCard({
             {description}
           </Typography>
         </CardContent>
-        <CardActions>
+        <CardActions
+        sx={{justifyContent: "space-between"}}>
           {/* <Link to={`/event/${id}`}> */}
           <Button
             href={`/event/${id}`}

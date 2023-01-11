@@ -1,4 +1,4 @@
-.dropdown {
+/* .dropdown-drop {
     background-color: white;
     position: absolute;
     z-index: 10;
@@ -11,4 +11,25 @@
     padding: 5px 20px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+} */
+.dropdown-drop{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
 }
+.dropdown-categories:hover{
+    background: #b2dfdb;
+    width: 100%;
+    /* text-align: center; */
+}
+
+.dropdown-categories{
+border-bottom: solid 1px grey;
+width: 100%;
+text-align: left;
+padding: 3px;
+}
+

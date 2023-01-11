@@ -27,7 +27,7 @@ interface IEvent {
   numberOfSeatsAvailable: number;
   price: number;
   pictureURL: string;
-  currency: string,
+  currency: string;
 }
 
 export default function ProductDetails() {
@@ -72,22 +72,20 @@ export default function ProductDetails() {
                   <TableCell>{Event?.name}</TableCell>
                 </TableRow> */}
                 <TableRow>
-                    <TableCell>Event date:</TableCell>
-                    <TableCell>{Event?.dateOfEvent}</TableCell>
-                  </TableRow>
+                  <TableCell>Event date:</TableCell>
+                  <TableCell>{Event?.dateOfEvent}</TableCell>
+                </TableRow>
                 <TableRow>
-                    <TableCell>Location:</TableCell>
-                    <TableCell>{Event?.location}</TableCell>
-                  </TableRow>
+                  <TableCell>Location:</TableCell>
+                  <TableCell>{Event?.location}</TableCell>
+                </TableRow>
                 <TableRow>
                   <TableCell>Description:</TableCell>
                   <TableCell>{Event?.description}</TableCell>
                 </TableRow>
                 <TableRow>
-                <TableCell>Seats available:</TableCell>
-                    <TableCell>
-                      {Event?.numberOfSeatsAvailable}
-                    </TableCell>
+                  <TableCell>Seats available:</TableCell>
+                  <TableCell>{Event?.numberOfSeatsAvailable}</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -110,6 +108,10 @@ export default function ProductDetails() {
                   backgroundColor: "#2bbbad",
                   fontWeight: 800,
                   fontSize: 21,
+                  ":hover": {
+                    backgroundColor: "#b2dfdb",
+                    color: "black",
+                  },
                 }}
                 size="large"
                 variant="contained"

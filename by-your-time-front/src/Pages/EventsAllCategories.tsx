@@ -53,8 +53,7 @@ const Categories = () => {
   ];
   return (
     <div>
-
-      <List>
+      <List className="grid-parent">
         <List className="grid">
           {products.map((product, index) => (
             <div className="element">
