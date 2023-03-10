@@ -1,8 +1,14 @@
-* {
+/* * {
     font-family: 'Lato', sans-serif;
-}
+} */
 
 .eventsheader {
     display: flex;
     padding-left: 7rem;
+}
+
+.center{
+    text-align: center;
+        overflow: auto;
+        padding: 30px;
 }

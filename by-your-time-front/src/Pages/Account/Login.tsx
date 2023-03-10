@@ -1,27 +1,26 @@
-import * as React from "react";
+
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-// import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Paper } from "@mui/material";
-import { Link } from "react-router-dom";
 import "./Login.css";
-import { useState } from "react";
-import { cachedDataVersionTag } from "v8";
 import agent from "../../api/agent";
 import { FieldValues, useForm } from "react-hook-form";
 import LoadingButton from "@mui/lab/LoadingButton";
-import { sizeHeight } from "@mui/system";
+import { useAppDispatch } from "../../app/store/configureStore";
+import { Link, useNavigate } from "react-router-dom";
+import { signInUser } from "./accountSlice";
 
 // const theme = createTheme();
 
 export default function Login() {
+ const navigate = useNavigate();
+ const dispatch = useAppDispatch();
+
+
   const {
     register,
     handleSubmit,
@@ -31,6 +30,8 @@ export default function Login() {
   });
 
   async function submitForm(data: FieldValues) {
+  await dispatch(signInUser(data))
+  navigate('/');
     try {
       await agent.Account.login(data);
     } catch (error) {
@@ -71,8 +72,8 @@ export default function Login() {
           autoFocus
           {...register("username", { required: "Username is required" })}
           error={!!errors.username}
-          //@ts-ignore
-          helperText={errors?.username?.message}
+         
+          helperText={errors?.username?.message as string}
         />
         <TextField
           margin="normal"
@@ -82,8 +83,7 @@ export default function Login() {
           type="password"
           {...register("password", { required: "Password is required" })}
           error={!!errors.password}
-          //@ts-ignore
-          helperText={errors?.password?.message}
+          helperText={errors?.password?.message as string}
           // id="password"
           // autoComplete="current-password"
         />

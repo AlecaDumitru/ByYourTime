@@ -9,6 +9,7 @@ function Footer() {
           <p className="footer-links">
             <a href="/about">
               <b>About</b>
+              
             </a>
 
             <a href="/terms-and-conditions">

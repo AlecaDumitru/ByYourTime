@@ -4,6 +4,7 @@ using ByYourTime.Data.Interfaces;
 using ByYourTime.Data.Models;
 using ByYourTime.Data.Repositories;
 using ByYourTime.Logic;
+using ByYourTime.Middleware;
 using ByYourTime.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -21,7 +22,7 @@ builder.Services.AddCors(options =>
         builder =>
         {
             builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
-            builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000/");
+            builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000/", "http://localhost:3001/");
 
         }
         );
@@ -97,8 +98,11 @@ builder.Services.AddScoped<TokenService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseMiddleware<ExceptionMiddleware>();
+
 if (app.Environment.IsDevelopment())
 {
+    
     app.UseSwagger();
     app.UseSwaggerUI();
 }

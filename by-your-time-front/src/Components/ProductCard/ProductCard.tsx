@@ -1,17 +1,17 @@
 import {
-  Avatar,
   Button,
   Card,
   CardActions,
   CardContent,
   CardMedia,
-  Grid,
-  IconButton,
   Typography,
 } from "@mui/material";
-import { Link } from "react-router-dom";
-import { Props } from "../../Pages/EventsAllCategories";
+import { Props } from "../../Pages/Categories";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import { useState } from "react";
+import agent from "../../api/agent";
+import LoadingButton from "@mui/lab/LoadingButton";
+import { useStoreContext } from "../../app/context/StoreContext";
 
 export default function ProductCard({
   id,
@@ -21,6 +21,18 @@ export default function ProductCard({
   currency,
   description,
 }: Props) {
+
+  const [loading, setLoading] = useState(false);
+
+  const {setBasket} = useStoreContext();
+  
+  function handleAddItem(productId:number){
+    setLoading(true);
+    agent.Basket.addItem(productId)
+    .then(basket => setBasket(basket))
+    .catch(error => console.log(error))
+    .finally(()=> setLoading(false));
+  }
   return (
     <>
       <Card sx={{ maxWidth: 345 }}>
@@ -50,8 +62,7 @@ export default function ProductCard({
             {description}
           </Typography>
         </CardContent>
-        <CardActions
-        sx={{justifyContent: "space-between"}}>
+        <CardActions sx={{ justifyContent: "space-between" }}>
           {/* <Link to={`/event/${id}`}> */}
           <Button
             href={`/event/${id}`}
@@ -75,7 +86,8 @@ export default function ProductCard({
 
           {/* <Button size="small">Learn More</Button> */}
 
-          <Button
+          <LoadingButton loading = {loading} 
+          onClick = {() => handleAddItem(id)}
             variant="contained"
             aria-label="add to shopping cart"
             sx={{
@@ -90,7 +102,7 @@ export default function ProductCard({
             }}
           >
             <AddShoppingCartIcon />
-          </Button>
+          </LoadingButton>
         </CardActions>
       </Card>
     </>

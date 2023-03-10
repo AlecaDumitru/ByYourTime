@@ -1,18 +1,11 @@
-import {
-  Avatar,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
-} from "@mui/material";
+import { List, ListItem } from "@mui/material";
 import React from "react";
-import ProductCard from "../../src/Components/ProductCard/ProductCard";
+import ProductCard from "../Components/ProductCard/ProductCard";
 import "../Components/ProductCard/ProductCard.css";
 import "./Categories.css";
-import { IEvents } from "./event";
 
 export interface Props {
-  id?: number;
+  id: number;
   productName?: string;
   price?: number;
   currency?: string;
@@ -22,15 +15,11 @@ export interface Props {
 
 const Categories = () => {
   const [events, setEvents] = React.useState<any | undefined>();
-  console.log(events);
 
   async function getEvents() {
     fetch(`http://localhost:5286/Event`, {
       method: "GET",
-    })
-    .then((response) => 
-    { 
-      console.log(response);
+    }).then((response) => {
       const data = response.json();
       setEvents(data);
     });
@@ -43,13 +32,13 @@ const Categories = () => {
 
   const products = [
     {
+      id: 0,
       productName: "Theatre",
       price: 50,
       currency: "lei",
       description: "What's The Rush? Buy Your Time And Gain An Advantage",
       pictureUrl: "/images/theatre.jpg",
     },
-    
   ];
   return (
     <div>
@@ -59,6 +48,7 @@ const Categories = () => {
             <div className="element">
               <ListItem key={index} />
               <ProductCard
+                id={product.id}
                 pictureUrl={product.pictureUrl}
                 productName={product.productName}
                 price={product.price}

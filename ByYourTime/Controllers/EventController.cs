@@ -37,9 +37,11 @@ namespace ByYourTime.Controllers
 
 
         [HttpGet("/events/category/{id}")]
-        public GetEventsResponse GetAllEventsByCategoryId([FromRoute]int id)
+        public async Task<ActionResult<GetEventsResponse>> GetAllEventsByCategoryId([FromRoute]int id)
         {
-            return _eventLogic.GetAllEventsByCategoriesId(id);
+            var product = _eventLogic.GetAllEventsByCategoriesId(id);
+            if (product == null || product.Events.Count == 0) return NotFound();
+            return product;
         }
 
 

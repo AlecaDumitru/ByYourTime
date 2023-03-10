@@ -1,15 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { StoreProvider } from "./app/context/StoreContext";
+import { Provider } from "react-redux";
+import { RouterProvider } from "react-router-dom";
+import { store } from "./app/store/configureStore";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
+
+
 root.render(
   <React.StrictMode>
-    <App />
+    <StoreProvider>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </StoreProvider>
   </React.StrictMode>
 );
 

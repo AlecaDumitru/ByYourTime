@@ -12,7 +12,11 @@ import {
   Typography,
 } from "@mui/material";
 import "./ProductPage.css";
-import { EventEmitter } from "stream";
+import { useParams } from "react-router-dom";
+import { useStore } from "react-redux";
+import { useStoreContext } from "../../app/context/StoreContext";
+import agent from "../../api/agent";
+import { LoadingButton } from "@mui/lab";
 
 interface IEvent {
   categoryId: number;
@@ -31,20 +35,48 @@ interface IEvent {
 }
 
 export default function ProductDetails() {
-  const pathname = window.location.pathname;
-  let newPathName = pathname.replace("/event/", "");
-  console.log(newPathName);
-
-  let [Event, SetEvent] = useState<IEvent>();
+  const { basket, setBasket, removeItem } = useStoreContext();
+  const param = useParams<{ id: string }>();
+  const [Event, SetEvent] = useState<IEvent>();
   console.log(Event);
+  // const pathname = window.location.pathname;
+  // let newPathName = pathname.replace("/event/", "");
+  // console.log(newPathName);
+  const [quantity, setQuantity] = useState(0);
+  const [submitting, setSubmitting] = useState(false);
+  const item = basket?.items.find((i) => i.eventId === Event?.id);
 
   useEffect(() => {
-    fetch(`http://localhost:5286/${newPathName}`, {
+    if (item) setQuantity(item.quantity);
+    fetch(`http://localhost:5286/${param.id}`, {
       method: "GET",
     })
       .then((response) => response.json())
       .then((response) => SetEvent(response));
-  }, []);
+  }, [item]);
+
+  function handleInputChange(event: any) {
+    if (event.target.value >= 0) {
+      setQuantity(parseInt(event.target.value));
+    }
+  }
+
+  function handleUpdateBasket() {
+    setSubmitting(true);
+    if (!item || quantity > item.quantity) {
+      const updatedQuantity = item ? quantity - item.quantity : quantity;
+      agent.Basket.addItem(Event?.id!, updatedQuantity)
+        .then((basket) => setBasket(basket))
+        .catch((error) => console.log(error))
+        .finally(() => setSubmitting(false));
+    } else {
+      const updatedQuantity = item.quantity - quantity;
+      agent.Basket.removeItem(Event?.id!, updatedQuantity)
+        .then(() => removeItem(Event?.id!, updatedQuantity))
+        .catch((error) => console.log(error))
+        .finally(() => setSubmitting(false));
+    }
+  }
 
   return (
     <Grid className="product" container spacing={10}>
@@ -90,18 +122,23 @@ export default function ProductDetails() {
               </TableBody>
             </Table>
           </TableContainer>
-          <Grid container spacing={2}>
+
+          <Grid container spacing={2} sx={{ mt: 2 }}>
             <Grid item xs={6}>
               <TextField
+                onChange={handleInputChange}
                 variant="outlined"
                 type="number"
                 label="Quantity in Cart"
                 fullWidth
-                // value = {quantity}
+                value={quantity}
               />
             </Grid>
             <Grid item xs={6}>
-              <Button
+              <LoadingButton
+              disabled = {item?.quantity === quantity || !item && quantity === 0}
+              loading = {submitting}
+              onClick= {handleUpdateBasket}
                 sx={{
                   height: "55px",
                   color: "black",
@@ -117,8 +154,8 @@ export default function ProductDetails() {
                 variant="contained"
                 fullWidth
               >
-                Add to cart
-              </Button>
+                {item ? "Update Quantity" : "Add to cart"}
+              </LoadingButton>
             </Grid>
           </Grid>
         </Grid>
